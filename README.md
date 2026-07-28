@@ -82,7 +82,3 @@ CSV output to `results/mandelbrot.csv`. Override the defaults with
 LAUNCHER="srun --nodes=1" scripts/benchmark.sh
 ```
 
-Benchmark results from the earlier version are not retained because its
-so-called dynamic scheduler performed the same cyclic row assignment as the
-static scheduler, and its reported "Mandelbrot pixels" counted points outside
-the set. Results should be regenerated with the corrected implementation.
